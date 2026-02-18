@@ -32,6 +32,7 @@ def clean_education(x):
 
 @st.cache
 def load_data():
+    # test change
 
     url = "https://drive.google.com/uc?export=download&id=1Yz1w2FKsCAEKoHAhbkh0pUaMzi57bjgc"
     df = pd.read_csv(url)
