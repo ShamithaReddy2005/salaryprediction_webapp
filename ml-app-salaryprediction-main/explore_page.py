@@ -32,7 +32,9 @@ def clean_education(x):
 
 @st.cache
 def load_data():
-    df = pd.read_csv("C:/Users/shami/OneDrive/Desktop/ml-app-salaryprediction-main/developer_survey/survey_results_public.csv")
+
+    url = "https://drive.google.com/uc?export=download&id=1Yz1w2FKsCAEKoHAhbkh0pUaMzi57bjgc"
+    df = pd.read_csv(url)
     df = df[["Country", "EdLevel", "YearsCodePro", "Employment", "ConvertedComp"]]
     df = df[df["ConvertedComp"].notnull()]
     df = df.dropna()
